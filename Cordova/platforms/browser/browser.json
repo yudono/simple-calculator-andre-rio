@@ -1,0 +1,49 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"ThemeDetection\"><param name=\"browser-package\" value=\"ThemeDetection\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-plugin-theme-detection": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "file": "plugins/cordova-plugin-theme-detection/www/ThemeDetection.js",
+      "id": "cordova-plugin-theme-detection.ThemeDetection",
+      "pluginId": "cordova-plugin-theme-detection",
+      "clobbers": [
+        "cordova.plugins.ThemeDetection"
+      ]
+    },
+    {
+      "file": "plugins/cordova-plugin-theme-detection/src/browser/ThemeDetectionProxy.js",
+      "id": "cordova-plugin-theme-detection.ThemeDetectionProxy",
+      "pluginId": "cordova-plugin-theme-detection",
+      "runs": true
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.4",
+    "cordova-plugin-theme-detection": "1.3.0"
+  }
+}
