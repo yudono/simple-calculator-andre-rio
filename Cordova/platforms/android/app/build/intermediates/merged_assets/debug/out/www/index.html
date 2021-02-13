@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+	<title>Simple Calculator</title>
+	<link href="css/tailwind.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body id="deviceready">
+
+	<div class="flex flex-col">
+		<div class="input flex flex-row">
+			<div class="h-full flex items-end text-5xl font-bold px-6 py-8" id="operand"></div>
+			<div class="h-full flex-grow flex items-end px-6 py-8">
+				<div class="text-right w-full">
+					<div class="text-xl text-gray-400 font-medium" id="detail"></div>
+					<div class="text-6xl font-medium" id="result"></div>
+				</div>				
+			</div>
+		</div>
+		<div class="body flex flex-col p-3">
+			
+			<div class="flex-1">
+				<div class="flex flex-row h-full">
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-button w-full h-full rounded-lg font-bold text-2xl">AC</button>
+					</div>
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-button w-full h-full rounded-lg font-bold text-2xl">+/-</button>
+					</div>
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-button w-full h-full rounded-lg font-bold text-2xl">%</button>
+					</div>
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-button w-full h-full rounded-lg font-bold text-2xl">/</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex-1">
+				<div class="flex flex-row h-full">
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-white w-full h-full rounded-lg font-bold text-2xl">7</button>
+					</div>
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-white w-full h-full rounded-lg font-bold text-2xl">8</button>
+					</div>
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-white w-full h-full rounded-lg font-bold text-2xl">9</button>
+					</div>
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-button w-full h-full rounded-lg font-bold text-2xl">×</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex-1">
+				<div class="flex flex-row h-full">
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-white w-full h-full rounded-lg font-bold text-2xl">4</button>
+					</div>
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-white w-full h-full rounded-lg font-bold text-2xl">5</button>
+					</div>
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-white w-full h-full rounded-lg font-bold text-2xl">6</button>
+					</div>
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-button w-full h-full rounded-lg font-bold text-2xl">-</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex-1">
+				<div class="flex flex-row h-full">
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-white w-full h-full rounded-lg font-bold text-2xl">1</button>
+					</div>
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-white w-full h-full rounded-lg font-bold text-2xl">2</button>
+					</div>
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-white w-full h-full rounded-lg font-bold text-2xl">3</button>
+					</div>
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-button w-full h-full rounded-lg font-bold text-2xl">+</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex-1">
+				<div class="flex flex-row h-full">
+					<div class="w-2/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-white w-full h-full rounded-lg font-bold text-2xl">0</button>
+					</div>
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-button w-full h-full rounded-lg font-bold text-2xl">.</button>
+					</div>
+					<div class="w-1/4 h-full rounded-lg font-bold text-2xl p-3">
+						<button class="bg-button w-full h-full rounded-lg font-bold text-2xl">=</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+<script src="cordova.js"></script>
+<script src="cordova_plugin.js"></script>
+<script src="js/app.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

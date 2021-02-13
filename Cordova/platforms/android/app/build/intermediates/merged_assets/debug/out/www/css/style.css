@@ -1,0 +1,12 @@
+.input{height:35vh;}
+.body{height:65vh;border-top-left-radius:20px;border-top-right-radius:20px;}
+
+.body{background-color:#F2F8FC;}
+.bg-button{background-color:#00A9C0;color:#FFFFFF;}
+#detail{color:#1A1B28;opacity:0.7;}
+
+.dark{background-color:#1A1B28;}
+.dark .body{background-color:#1E2435;}
+.dark button:not(.bg-button){background-color:#1A1B28;color:#FFFFFF;}
+.dark .input{color:#FFFFFF;}
+.dark #detail{color:#FFFFFF;opacity:0.7;}
